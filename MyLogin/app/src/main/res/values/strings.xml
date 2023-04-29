@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">MyLogin</string>
+    <string name="txtlogin">登入</string>
+    <string name="txttregister">註冊</string>
+    <string name="txtforgetpassword">忘記密碼</string>
+    <string name="txtpagemain">歡迎來到Bagchance</string>
+    <string name="errmail">Mail不可為空</string>
+    <string name="errpassword">密碼不可為空</string>
+    <string name="txtloginpage2">登入成功</string>
+    <string name="txtmail">請輸入信箱</string>
+    <string name="txtpassword">請輸入密碼</string>
+    <string name="errmailformat">信箱格式錯誤</string>
+</resources>
