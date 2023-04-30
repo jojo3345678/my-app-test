@@ -36,7 +36,8 @@ class MainFragment : Fragment() {
                     .navigate(R.id.pageLogin1Fragment, arguments)
             }
             btregister.setOnClickListener {
-                Navigation.findNavController(view).popBackStack()
+                Navigation.findNavController(view)
+                    .navigate(R.id.pageregister1Fragment, arguments)
             }
         }
     }

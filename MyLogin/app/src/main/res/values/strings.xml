@@ -7,7 +7,11 @@
     <string name="errmail">Mail不可為空</string>
     <string name="errpassword">密碼不可為空</string>
     <string name="txtloginpage2">登入成功</string>
+    <string name="txtregisterpage2">註冊成功</string>
     <string name="txtmail">請輸入信箱</string>
     <string name="txtpassword">請輸入密碼</string>
     <string name="errmailformat">信箱格式錯誤</string>
+    <string name="txtusername">暱稱</string>
+    <string name="txtpassword2">請確認密碼</string>
+    <string name="errpasswordnomatch">與密碼不同</string>
 </resources>

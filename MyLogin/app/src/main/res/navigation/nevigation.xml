@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_mainFragment_to_pageLogin1Fragment"
             app:destination="@id/pageLogin1Fragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_pageregister1Fragment"
+            app:destination="@id/pageregister1Fragment" />
     </fragment>
     <fragment
         android:id="@+id/pageLogin1Fragment"
@@ -28,4 +31,18 @@
         android:name="com.example.mylogin.PageLogin2Fragment"
         android:label="fragment_page_login2"
         tools:layout="@layout/fragment_page_login2" />
+    <fragment
+        android:id="@+id/pageregister1Fragment"
+        android:name="com.example.mylogin.Pageregister1Fragment"
+        android:label="fragment_pageregister1"
+        tools:layout="@layout/fragment_pageregister1" >
+        <action
+            android:id="@+id/action_pageregister1Fragment_to_pageregister2Fragment"
+            app:destination="@id/pageregister2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pageregister2Fragment"
+        android:name="com.example.mylogin.Pageregister2Fragment"
+        android:label="fragment_pageregister2"
+        tools:layout="@layout/fragment_pageregister2" />
 </navigation>

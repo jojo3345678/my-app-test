@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Pageregister1Fragment">
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.mylogin.Pageregister1ViewModel" />
+    </data>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/frameLayout4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+    <EditText
+        android:id="@+id/etname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="116dp"
+        android:ems="10"
+        android:hint="@string/txtusername"
+        android:inputType="textPersonName"
+        android:text="@={viewModel.name}"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etregistermail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@={viewModel.uid}"
+        android:ems="10"
+        android:hint="@string/txtmail"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/etname"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etname"
+        app:layout_constraintTop_toBottomOf="@+id/etname" />
+
+    <EditText
+        android:id="@+id/etregisterpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:text="@={viewModel.password}"
+        android:hint="@string/txtpassword"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/etregistermail"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etregistermail"
+        app:layout_constraintTop_toBottomOf="@+id/etregistermail" />
+
+    <EditText
+        android:id="@+id/etregisterpassword2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="@string/txtpassword2"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/etregisterpassword"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etregisterpassword"
+        app:layout_constraintTop_toBottomOf="@+id/etregisterpassword" />
+
+    <Button
+        android:id="@+id/btregister2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/txttregister"
+        app:layout_constraintEnd_toEndOf="@+id/etregisterpassword2"
+        app:layout_constraintStart_toStartOf="@+id/etregisterpassword2"
+        app:layout_constraintTop_toBottomOf="@+id/etregisterpassword2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
